@@ -1,23 +1,23 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+이 파일은 이 저장소에서 작업할 때 Claude Code(claude.ai/code)에게 주는 안내입니다.
 
-## Repository overview
+## 저장소 개요
 
-This is a personal study/scratch repository with almost no content yet:
+아직 내용이 거의 없는 개인 공부/연습용 저장소입니다.
 
-- `Readme.md` — a one-line description in Korean ("이것은 테스트입니다." / "This is a test.").
-- `Test.py` — a single Python script containing only `print 'aaaa'`.
+- `Readme.md` — 한국어 한 줄 설명("이것은 테스트입니다.")이 들어 있습니다.
+- `Test.py` — `print 'aaaa'` 한 줄만 있는 Python 스크립트입니다.
 
-There is no build system, package manifest, dependency list, linter config, or test suite.
+빌드 시스템, 패키지 매니페스트, 의존성 목록, 린터 설정, 테스트는 없습니다.
 
-## Running code
+## 코드 실행
 
-`Test.py` uses **Python 2** print-statement syntax, so it fails under Python 3 with a `SyntaxError`:
+`Test.py`는 **Python 2**의 print 문 문법을 쓰기 때문에 Python 3에서는 `SyntaxError`가 납니다.
 
 ```sh
-python2 Test.py   # works if Python 2 is installed
+python2 Test.py   # Python 2가 설치되어 있으면 실행됨
 python3 Test.py   # SyntaxError
 ```
 
-If you modify or add Python files, ask the user whether to keep Python 2 syntax or migrate to Python 3 (e.g. `print('aaaa')`) rather than changing it silently.
+Python 파일을 수정하거나 추가할 때는 임의로 바꾸지 말고, Python 2 문법을 유지할지 Python 3로 바꿀지(예: `print('aaaa')`) 사용자에게 먼저 물어보세요.
